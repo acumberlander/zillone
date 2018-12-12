@@ -4,6 +4,7 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Auth from '../components/Auth/auth';
 import Listings from '../Listings/Listings';
+import MyNavbar from '../MyNavbar/myNavbar';
 
 class App extends Component {
 state = {
@@ -22,12 +23,14 @@ render() {
   if (!this.state.authed) {
     return (
       <div className="App">
+        <MyNavbar />
         <Auth isAuthenticated={this.isAuthenticated}/>
       </div>
     );
   }
   return (
       <div className="App">
+        <MyNavbar />
         <Listings />
       </div>
   );
