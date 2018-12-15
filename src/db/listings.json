@@ -187,30 +187,6 @@
       "imageUrl": "https://photos.zillowstatic.com/p_h/ISuw0r8axjdky81000000000.jpg",
       "uid": "12345"
     },
-    "listing17": {
-      "address": "123 East Nashville Nashville, TN 37207",
-      "squareFootage": 185,
-      "price": 57250,
-      "numBeds": 1,
-      "numBaths": 1,
-      "lotInAcres": 0,
-      "heating": "Heat pump",
-      "cooling": "Central",
-      "imageUrl": "https://static1.squarespace.com/static/558736bce4b04f0a4c09d8cd/58f52010cd0f6824cac523a4/58f52011bebafb8298e8a448/1492459539712/01+outside.jpg?format=1500w",
-      "uid": "12345"
-    },
-    "listing18": {
-      "address": "907 S Douglas Avenue Nashville, TN 37204",
-      "squareFootage": 2008,
-      "price": 440000,
-      "numBeds": 4,
-      "numBaths": 2,
-      "lotInAcres": 0.05,
-      "heating": "No data",
-      "cooling": "Central",
-      "imageUrl": "https://photos.zillowstatic.com/p_h/ISmepn993o1vra0000000000.jpg",
-      "uid": "12345"
-    },
     "listing19": {
       "address": "2197 Nolensville Pike APT 312 Nashville, TN 37211",
       "squareFootage": 901,
