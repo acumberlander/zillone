@@ -1,20 +1,18 @@
 import React from 'react';
-import './auth.scss';
 import PropTypes from 'prop-types';
 import authRequests from '../../Helpers/Data/authRequests';
+import './auth.scss';
 
-class auth extends React.Component {
+class Auth extends React.Component {
   static propTypes = {
     isAuthenticated: PropTypes.func,
   }
 
   authenticateUser = (e) => {
     e.preventDefault();
-    authRequests.authenticate()
-      .then(() => {
-        this.props.isAuthenticated();
-      })
-      .catch(error => console.error('there was an error with auth', error));
+    authRequests.authenticate().then(() => {
+      this.props.isAuthenticated();
+    }).catch(err => console.error('there was an error with auth', err));
   }
 
   render() {
@@ -26,4 +24,4 @@ class auth extends React.Component {
   }
 }
 
-export default auth;
+export default Auth;

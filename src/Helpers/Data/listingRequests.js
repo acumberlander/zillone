@@ -13,13 +13,15 @@ const getRequest = () => new Promise((resolve, reject) => {
           res.data[key].id = key;
           listings.push(res.data[key]);
         });
-        resolve(listings);
       }
+      resolve(listings);
     })
     .catch(err => reject(err));
 });
 
+const deleteListing = listingId => axios.delete(`${firebaseUrl}/listings/${listingId}.json`);
 
 export default {
   getRequest,
+  deleteListing,
 };
