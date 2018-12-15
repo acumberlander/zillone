@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import firebase from 'firebase/app';
-import 'firebase/auth';
+// import 'firebase/auth';
 import connection from '../Helpers/Data/connection';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Auth from '../components/Auth/auth';
 import Listings from '../Listings/Listings';
+import ListingForm from '../ListingForm/listingForm';
+import Building from '../Building/building';
 import MyNavbar from '../MyNavbar/myNavbar';
 import authRequests from '../Helpers/Data/authRequests';
 
@@ -47,14 +49,22 @@ render() {
     return (
       <div className="App">
         <MyNavbar isAuthed={this.state.authed} logoutClickEvent={logoutClickEvent}/>
-        <Auth isAuthenticated={this.isAuthenticated}/>
+        <div className="row">
+          <Auth isAuthenticated={this.isAuthenticated}/>
+        </div>
       </div>
     );
   }
   return (
       <div className="App">
         <MyNavbar isAuthed={this.state.authed} logoutClickEvent={logoutClickEvent}/>
-        <Listings />
+        <div className="row">
+          <Listings />
+          <Building />
+        </div>
+        <div className="row">
+          <ListingForm />
+        </div>
       </div>
   );
 }
